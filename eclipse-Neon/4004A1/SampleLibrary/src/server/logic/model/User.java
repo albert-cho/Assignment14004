@@ -1,9 +1,9 @@
 package server.logic.model;
 
 public class User {
-	static int userid = 0;
-	static String username = "John";
-	static String password = "Password";
+	int userid;
+	String username;
+	String password;
 	
 	public User(int userid,String username, String password){
 		this.userid=userid;
@@ -15,7 +15,7 @@ public class User {
 		return "["+this.userid+","+this.username+","+this.password+"]";
 	}
 		
-	public static int getUserid() {
+	public int getUserid() {
 		return userid;
 	}
 	
@@ -23,7 +23,7 @@ public class User {
 		this.userid=userid;
 	}
 
-	public static String getUsername() {
+	public String getUsername() {
 		return username;
 	}
 	
@@ -31,7 +31,7 @@ public class User {
 		this.username=username;
 	}
 
-	public static String getPassword() {
+	public String getPassword() {
 		return password;
 	}
 	
