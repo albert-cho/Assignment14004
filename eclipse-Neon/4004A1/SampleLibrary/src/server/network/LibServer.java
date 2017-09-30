@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import server.logic.handler.model.Client;
+import utilities.Trace;
 
 public class LibServer implements Runnable{
 	int clientCount = 0;
@@ -23,9 +24,14 @@ public class LibServer implements Runnable{
 			clients = new HashMap<Integer, ServerThread>();
 			server = new ServerSocket(port);
 			server.setReuseAddress(true);
-			//start();
+			start();
 		} catch (IOException ioe) {
 			logger.fatal(ioe);
 		}
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
 	}
 }
