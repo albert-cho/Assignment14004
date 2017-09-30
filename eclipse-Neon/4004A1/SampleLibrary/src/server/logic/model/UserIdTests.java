@@ -10,6 +10,8 @@ public class UserIdTests {
 	public void test() {
 		//fail("Not yet implemented");
 		assertEquals(0, User.getUserid());
+		assertEquals("John", User.getUsername());
+		assertEquals("Password", User.getPassword());
 	}
 
 }
