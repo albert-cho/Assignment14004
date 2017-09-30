@@ -16,6 +16,7 @@ public class UserTests {
 		assertEquals(0, tUser.getUserid());
 		assertEquals("John", tUser.getUsername());
 		assertEquals("Password", tUser.getPassword());
+		assertEquals("[0,John,Password]", tUser.toString());
 	}
 
 }

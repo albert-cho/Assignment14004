@@ -15,6 +15,7 @@ public class TitleTests {
 		//fail("Not yet implemented");
 		assertEquals("Test", cTitle.getISBN());
 		assertEquals("Name", cTitle.getBooktitle());
+		assertEquals("[Test,Name]", cTitle.toString());
 	}
 
 }
