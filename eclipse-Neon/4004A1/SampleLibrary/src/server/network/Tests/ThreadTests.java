@@ -17,12 +17,13 @@ public class ThreadTests {
 	
 	try
 	{
-		LibServer lib = new LibServer(Config.DEFAULT_PORT);
-		Socket server = new Socket("Test", Config.DEFAULT_PORT);
+		libServer = new LibServer(Config.DEFAULT_PORT);
+		server = new Socket("Test", Config.DEFAULT_PORT);
 	} catch (IOException e){
 		e.printStackTrace();
-	}
+	}}
 	
+	ServerThread tServ = new ServerThread(libServer, server);
 	
 	@Test
 	public void test() {
