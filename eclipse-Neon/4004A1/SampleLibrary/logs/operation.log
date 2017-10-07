@@ -86,4 +86,244 @@
 @2017-10-07 15:15:38 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
 @2017-10-07 15:15:38 INFO  String:44 - Operation:Create New User;User Info:[Test,Password];State:Success
 @2017-10-07 15:15:38 INFO  String:47 - Operation:Create New User;User Info:[Test,Password];State:Fail;Reason:The User already existed.
+@2017-10-07 15:33:31 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 03:33:31,0]]
+@2017-10-07 15:33:31 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 15:33:31 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 15:33:31 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 15:33:31 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 15:33:31 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 15:33:31 INFO  String:59 - Operation:Borrow Item;Loan Info:[0,9781611687910,1,2017-10-07 03:33:31];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-07 15:38:05 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 03:38:05,0]]
+@2017-10-07 15:38:05 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 15:38:05 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 15:38:05 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 15:38:05 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 15:38:05 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 15:38:05 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 03:38:05];State:Success
+@2017-10-07 15:38:05 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 03:38:05];State:Fail;Reason:Invalid User.
+@2017-10-07 15:38:05 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 03:38:05];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 15:38:05 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 03:38:05];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 15:40:48 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 03:40:48,0]]
+@2017-10-07 15:40:48 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 15:40:48 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 15:40:48 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 15:40:48 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 15:40:48 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 15:40:48 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 03:40:48];State:Success
+@2017-10-07 15:40:48 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 03:40:48];State:Fail;Reason:Invalid User.
+@2017-10-07 15:40:48 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 03:40:48];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 15:40:48 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 03:40:48];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 15:45:15 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 03:45:15,0]]
+@2017-10-07 15:45:15 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 15:45:15 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 15:45:15 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 15:45:15 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 15:45:15 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 15:45:15 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 03:45:15];State:Success
+@2017-10-07 15:45:15 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 03:45:15];State:Fail;Reason:Invalid User.
+@2017-10-07 15:45:15 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 03:45:15];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 15:45:15 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 03:45:15];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 15:51:55 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 03:51:55,0]]
+@2017-10-07 15:51:55 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 15:51:55 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 15:51:56 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 15:51:56 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 15:51:56 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 15:51:56 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 03:51:55];State:Success
+@2017-10-07 15:51:56 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 03:51:55];State:Fail;Reason:Invalid User.
+@2017-10-07 15:51:56 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 03:51:55];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 15:51:56 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 03:51:55];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 15:54:52 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 03:54:52,0]]
+@2017-10-07 15:54:52 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 15:54:52 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 15:54:52 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 15:54:52 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 15:54:52 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 15:54:52 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 03:54:52];State:Success
+@2017-10-07 15:54:52 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 03:54:52];State:Fail;Reason:Invalid User.
+@2017-10-07 15:54:52 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 03:54:52];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 15:54:52 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 03:54:52];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 15:54:52 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 03:54:52];State:Success
+@2017-10-07 16:01:18 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:01:18,0]]
+@2017-10-07 16:01:18 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:01:18 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:01:18 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:01:18 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:01:18 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:01:18 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:01:18];State:Success
+@2017-10-07 16:01:18 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:01:18];State:Fail;Reason:Invalid User.
+@2017-10-07 16:01:18 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:01:18];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:01:18 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:01:18];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:01:18 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:01:18];State:Success
+@2017-10-07 16:01:18 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:01:18];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:01:41 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:01:41,0]]
+@2017-10-07 16:01:41 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:01:41 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:01:41 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:01:41 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:01:41 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:01:41 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:01:41];State:Success
+@2017-10-07 16:01:41 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:01:41];State:Fail;Reason:Invalid User.
+@2017-10-07 16:01:41 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:01:41];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:01:41 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:01:41];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:01:41 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:01:41];State:Success
+@2017-10-07 16:01:41 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:01:41];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:01:41 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:01:41];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:03:07 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:03:07,0]]
+@2017-10-07 16:03:07 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:03:07 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:03:07 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:03:07 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:03:07 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:03:07 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:03:07];State:Success
+@2017-10-07 16:03:07 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:03:07];State:Fail;Reason:Invalid User.
+@2017-10-07 16:03:07 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:03:07];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:03:07 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:03:07];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:03:07 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:03:07];State:Success
+@2017-10-07 16:03:07 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:03:07];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:03:07 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:03:07];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:03:07 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:03:07];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:03:41 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:03:41,0]]
+@2017-10-07 16:03:41 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:03:41 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:03:41 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:03:41 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:03:41 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:03:41 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:03:41];State:Success
+@2017-10-07 16:03:41 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:03:41];State:Fail;Reason:Invalid User.
+@2017-10-07 16:03:41 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:03:41];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:03:41 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:03:41];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:03:41 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:03:41];State:Success
+@2017-10-07 16:03:41 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:03:41];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:03:41 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:03:41];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:06:42 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:06:42,0]]
+@2017-10-07 16:06:42 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:06:42 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:06:43 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:06:43 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:06:43 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:06:43 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:06:42];State:Success
+@2017-10-07 16:06:43 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:06:42];State:Fail;Reason:Invalid User.
+@2017-10-07 16:06:43 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:06:42];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:06:43 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:06:42];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:06:43 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:06:42];State:Success
+@2017-10-07 16:06:43 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:06:42];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:06:43 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:06:42];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:06:43 INFO  String:173 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:06:42];State:Success
+@2017-10-07 16:08:24 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:08:24,0]]
+@2017-10-07 16:08:24 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:08:24 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:08:24 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:08:24 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:08:24 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:08:24 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:08:24];State:Success
+@2017-10-07 16:08:24 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:08:24];State:Fail;Reason:Invalid User.
+@2017-10-07 16:08:24 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:08:24];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:08:24 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:08:24];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:08:24 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:08:24];State:Success
+@2017-10-07 16:08:24 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:08:24];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:08:24 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:08:24];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:08:24 INFO  String:173 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:08:24];State:Success
+@2017-10-07 16:08:24 INFO  String:180 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:08:24];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-07 16:10:35 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:10:35,0]]
+@2017-10-07 16:10:35 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:10:35 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:10:35 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:10:35 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:10:35 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:10:35 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:10:35];State:Success
+@2017-10-07 16:10:35 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:10:35];State:Fail;Reason:Invalid User.
+@2017-10-07 16:10:35 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:10:35];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:10:35 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:10:35];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:10:35 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:10:35];State:Success
+@2017-10-07 16:10:35 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:10:35];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:10:35 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:10:35];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:10:35 INFO  String:173 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:10:35];State:Success
+@2017-10-07 16:10:35 INFO  String:180 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:10:35];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-07 16:11:19 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:11:19,0]]
+@2017-10-07 16:11:19 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:11:19 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:11:19 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:11:19 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:11:19 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:11:19 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:11:19];State:Success
+@2017-10-07 16:11:19 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:11:19];State:Fail;Reason:Invalid User.
+@2017-10-07 16:11:19 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:11:19];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:11:19 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:11:19];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:11:19 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:11:19];State:Success
+@2017-10-07 16:11:19 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:11:19];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:11:19 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:11:19];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:11:30 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:11:30,0]]
+@2017-10-07 16:11:30 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:11:30 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:11:30 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:11:30 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:11:30 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:11:30 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:11:30];State:Success
+@2017-10-07 16:11:30 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:11:30];State:Fail;Reason:Invalid User.
+@2017-10-07 16:11:30 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:11:30];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:11:30 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:11:30];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:11:30 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:11:30];State:Success
+@2017-10-07 16:11:30 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:11:30];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:11:30 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:11:30];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:13:02 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:13:02,0]]
+@2017-10-07 16:13:02 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:13:02 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:13:02 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:13:02 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:13:02 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:13:02 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:02];State:Success
+@2017-10-07 16:13:02 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:13:02];State:Fail;Reason:Invalid User.
+@2017-10-07 16:13:02 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:13:02];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:13:02 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:13:02];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:13:02 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:02];State:Success
+@2017-10-07 16:13:02 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:02];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:13:02 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:13:02];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:13:02 INFO  String:173 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:02];State:Success
+@2017-10-07 16:13:02 INFO  String:180 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:02];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-07 16:13:19 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:13:19,0]]
+@2017-10-07 16:13:19 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:13:19 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:13:19 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:13:19 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:13:19 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:13:19 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:19];State:Success
+@2017-10-07 16:13:19 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:13:19];State:Fail;Reason:Invalid User.
+@2017-10-07 16:13:19 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:13:19];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:13:19 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:13:19];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:13:19 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:19];State:Success
+@2017-10-07 16:13:19 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:19];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:13:19 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:13:19];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:13:19 INFO  String:173 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:19];State:Success
+@2017-10-07 16:13:19 INFO  String:180 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:13:19];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-07 16:15:17 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:15:17,0]]
+@2017-10-07 16:15:17 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:15:17 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:15:17 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:15:17 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:15:17 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:15:17 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:17];State:Success
+@2017-10-07 16:15:17 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:15:17];State:Fail;Reason:Invalid User.
+@2017-10-07 16:15:17 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:15:17];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:15:17 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:15:17];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:15:17 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:17];State:Success
+@2017-10-07 16:15:17 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:17];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:15:17 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:15:17];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:15:17 INFO  String:173 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:17];State:Success
+@2017-10-07 16:15:17 INFO  String:180 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:17];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-07 16:15:36 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 04:15:36,0]]
+@2017-10-07 16:15:36 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-07 16:15:36 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-07 16:15:36 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-07 16:15:36 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 16:15:36 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 16:15:36 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:36];State:Success
+@2017-10-07 16:15:36 INFO  String:40 - Operation:Borrow Item;Loan Info:[6,9781611687910,1,2017-10-07 04:15:36];State:Fail;Reason:Invalid User.
+@2017-10-07 16:15:36 INFO  String:43 - Operation:Borrow Item;Loan Info:[1,1,1,2017-10-07 04:15:36];State:Fail;Reason:Invalid ISBN.
+@2017-10-07 16:15:36 INFO  String:46 - Operation:Borrow Item;Loan Info:[1,9781611687910,0,2017-10-07 04:15:36];State:Fail;Reason:Invalid Copynumber.
+@2017-10-07 16:15:36 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:36];State:Success
+@2017-10-07 16:15:36 INFO  String:133 - Operation:Renew Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:36];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-07 16:15:36 INFO  String:137 - Operation:Renew Item;Loan Info:[1,1,1,2017-10-07 04:15:36];State:Fail;Reason:The loan does not exist.
+@2017-10-07 16:15:36 INFO  String:173 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:36];State:Success
+@2017-10-07 16:15:36 INFO  String:180 - Operation:Return Item;Loan Info:[1,9781611687910,1,2017-10-07 04:15:36];State:Fail;Reason:The Loan Does Not Exist.
 @
