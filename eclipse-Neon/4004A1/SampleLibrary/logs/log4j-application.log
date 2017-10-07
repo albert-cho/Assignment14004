@@ -33,4 +33,48 @@
 @2017-10-07 14:00:00 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
 @2017-10-07 14:00:00 INFO  String:44 - Operation:Create New Item;Item Info:[9781611687910,2];State:Success
 @2017-10-07 14:00:00 INFO  String:47 - Operation:Create New Item;Item Info:[Test,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-07 14:42:10 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:42:10,0]]
+@2017-10-07 14:42:10 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:42:10 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:43:05 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:43:05,0]]
+@2017-10-07 14:43:05 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:43:05 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:43:17 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:43:17,0]]
+@2017-10-07 14:43:17 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:43:17 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:43:36 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:43:36,0]]
+@2017-10-07 14:43:36 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:43:36 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:43:36 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,16661];State:Success
+@2017-10-07 14:46:55 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:46:55,0]]
+@2017-10-07 14:46:55 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:46:55 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:46:55 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,16661];State:Success
+@2017-10-07 14:47:20 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:47:20,0]]
+@2017-10-07 14:47:20 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:47:20 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:47:20 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,16661];State:Success
+@2017-10-07 14:47:30 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:47:30,0]]
+@2017-10-07 14:47:30 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:47:30 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:47:30 INFO  String:108 - Operation:Apply OutStanding Fee;Fee Info:[1,0];State:Success
+@2017-10-07 14:47:48 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:47:48,0]]
+@2017-10-07 14:47:48 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:47:48 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:47:48 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,161];State:Success
+@2017-10-07 14:50:45 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:50:45,0]]
+@2017-10-07 14:50:45 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:50:45 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:50:45 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,161];State:Success
+@2017-10-07 14:50:45 INFO  String:149 - Operation:Pay Fine;Fee Info:[1,161];State:Success
+@2017-10-07 14:52:27 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:52:27,0]]
+@2017-10-07 14:52:27 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:52:27 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:52:27 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,161];State:Success
+@2017-10-07 14:52:27 INFO  String:149 - Operation:Pay Fine;Fee Info:[1,161];State:Success
+@2017-10-07 14:53:33 INFO  String:22 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-07 02:53:33,0]]
+@2017-10-07 14:53:33 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-07 14:53:33 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-07 14:53:33 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,161];State:Success
+@2017-10-07 14:53:33 INFO  String:149 - Operation:Pay Fine;Fee Info:[1,161];State:Success
 @
