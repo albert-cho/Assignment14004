@@ -38,6 +38,7 @@ public class UserTableTests {
 		tFtable.payfine(0);
 		tLtable.createloan(0, "9781442668584", "1", tDate);
 		assertEquals("Active Loan Exists", tUtable.delete(0));
+		assertEquals("The User Does Not Exist", tUtable.delete(6));
 	}
 
 }
