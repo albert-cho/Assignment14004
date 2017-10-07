@@ -62,7 +62,7 @@ public class TitleTable {
 		}
 		return result;
 	}
-	/*public Object delete(String string) {
+	public Object delete(String string) {
 		String result="";
 		int index=0;
 		int flag=0;
@@ -91,7 +91,7 @@ public class TitleTable {
 			logger.info(String.format("Operation:Delete Title;ISBN Info:[%s];State:Fail;Reason:The Title Does Not Exist.", string));
 		}
 		return result;
-	}*/
+	}
 	public List<Title> getTitleTable() {
 		return titleList;
 	}
