@@ -2,13 +2,20 @@ package server.logic.tables.Tests;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
+
 import org.junit.Test;
 
+import server.logic.tables.FeeTable;
+import server.logic.tables.LoanTable;
 import server.logic.tables.UserTable;
 
 public class UserTableTests {
 
 	UserTable tUtable = UserTable.getInstance();
+	LoanTable tLtable = LoanTable.getInstance();
+	FeeTable tFtable = FeeTable.getInstance();
+	Date tDate = new Date();
 	
 	@Test
 	public void test() {
@@ -24,6 +31,13 @@ public class UserTableTests {
 		assertEquals(0, tUtable.checkUser("Test", "Password"));
 		assertEquals(1, tUtable.checkUser("Test", ""));
 		assertEquals(2, tUtable.checkUser("Tests", "Hello"));
+		
+		assertEquals("success", tUtable.delete(5));
+		assertEquals("Outstanding Fee Exists", tUtable.delete(0));
+		tLtable.returnItem(0, "9781442668584", "1", tDate);
+		tFtable.payfine(0);
+		tLtable.createloan(0, "9781442668584", "1", tDate);
+		assertEquals("Active Loan Exists", tUtable.delete(0));
 	}
 
 }
