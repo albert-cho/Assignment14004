@@ -2,6 +2,9 @@ package server.network;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 import org.apache.log4j.Logger;
@@ -25,5 +28,19 @@ public class ServerThread extends Thread{
 		this.socket = socket;
 		this.ID = socket.getPort();
 		this.clientAddress = socket.getInetAddress().getHostAddress();
+	}
+	
+	public int getID() {
+		return this.ID;
+	}
+	
+	
+	
+	public String getSocketAddress () {
+		return clientAddress;
+	}
+	public void open() throws IOException {
+		streamIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+		streamOut = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 	}
 }
