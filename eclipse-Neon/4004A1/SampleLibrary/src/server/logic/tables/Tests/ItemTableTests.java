@@ -18,6 +18,14 @@ public class ItemTableTests {
 		
 		assertEquals(true, tItable.lookup("9781442668584", "1"));
 		assertEquals(false, tItable.lookup("Test", "0"));
+		
+		assertEquals("Active Loan Exists", tItable.delete("9781442668584", "1"));
+		assertEquals("success", tItable.delete("9781442616899", "1"));
+		assertEquals("The Item Does Not Exist", tItable.delete("1", "1"));
+		
+		tItable.deleteAll("9781442668584");
+		
+		assertEquals(false, tItable.lookup("9781442668584", "1"));
 	}
 
 }
