@@ -24,9 +24,11 @@ public class LoanTableTests {
 		assertEquals("Copynumber Invalid", tLtable.createloan(1, "9781611687910", "0", tDate));
 		assertEquals("The Item is Not Available", tLtable.createloan(1, "9781611687910", "1", tDate));
 		assertEquals("Outstanding Fee Exists", tLtable.createloan(0, "9781442616899", "1", tDate));
+		
 		tLtable.returnItem(0, "9781442668584", "1", tDate);
+		
 		tLtable.createloan(1, "9781442667181", "1", tDate);
-		assertEquals("success", tLtable.createloan(1, "9781442616899", "1", tDate));
+		tLtable.createloan(1, "9781442616899", "1", tDate);
 		assertEquals("The Maximun Number of Items is Reached", tLtable.createloan(1, "9781442668584", "1", tDate));
 		
 		
