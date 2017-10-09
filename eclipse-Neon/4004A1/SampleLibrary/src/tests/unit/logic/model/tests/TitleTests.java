@@ -16,6 +16,12 @@ public class TitleTests {
 		assertEquals("Test", cTitle.getISBN());
 		assertEquals("Name", cTitle.getBooktitle());
 		assertEquals("[Test,Name]", cTitle.toString());
+		
+		cTitle.setBooktitle("Test");
+		cTitle.setISBN("T1");
+		
+		assertEquals("Test", cTitle.getBooktitle());
+		assertEquals("T1", cTitle.getISBN());
 	}
 
 }

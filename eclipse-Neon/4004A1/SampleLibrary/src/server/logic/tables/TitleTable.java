@@ -62,12 +62,12 @@ public class TitleTable {
 		}
 		return result;
 	}
-	public Object delete(String string) {
+	public Object delete(String tISBN) {
 		String result="";
 		int index=0;
 		int flag=0;
 		for(int i=0;i<titleList.size();i++){
-			if(titleList.get(i).getISBN().equalsIgnoreCase(string)){
+			if(titleList.get(i).getISBN().equalsIgnoreCase(tISBN)){
 				flag=flag+1;
 				index=i;
 			}else{
@@ -75,20 +75,20 @@ public class TitleTable {
 			}
 		}
 		if(flag!=0){
-			boolean loan=LoanTable.getInstance().checkLoan(string);
+			boolean loan=LoanTable.getInstance().checkLoan(tISBN);
 			if(loan){
 				String string2=titleList.get(index).getBooktitle();
-				ItemTable.getInstance().deleteAll(string);
+				ItemTable.getInstance().deleteAll(tISBN);
 				titleList.remove(index);
 				result="success";
-				logger.info(String.format("Operation:Delete Title;Title Info:[%s,%s];State:Success", string,string2));
+				logger.info(String.format("Operation:Delete Title;Title Info:[%s,%s];State:Success", tISBN,string2));
 			}else{
 				result="Active Loan Exists";
-				logger.info(String.format("Operation:Delete Title;ISBN Info:[%s];State:Fail;Reason:Active Loan Exists.", string));
+				logger.info(String.format("Operation:Delete Title;ISBN Info:[%s];State:Fail;Reason:Active Loan Exists.", tISBN));
 			}
 		}else{
 			result="The Title Does Not Exist";
-			logger.info(String.format("Operation:Delete Title;ISBN Info:[%s];State:Fail;Reason:The Title Does Not Exist.", string));
+			logger.info(String.format("Operation:Delete Title;ISBN Info:[%s];State:Fail;Reason:The Title Does Not Exist.", tISBN));
 		}
 		return result;
 	}

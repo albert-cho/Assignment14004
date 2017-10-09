@@ -16,6 +16,12 @@ public class FeeTests {
 		assertEquals(0, tFee.getUserid());
 		assertEquals(0, tFee.getFee());
 		assertEquals("[0,0]", tFee.toString());
+		
+		tFee.setFee(1);
+		tFee.setUserid(4);
+		
+		assertEquals(1, tFee.getFee());
+		assertEquals(4, tFee.getUserid());
 	}
 
 }

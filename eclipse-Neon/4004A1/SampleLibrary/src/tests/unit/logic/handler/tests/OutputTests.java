@@ -16,6 +16,12 @@ public class OutputTests {
 		assertEquals("Test", tOut.getOutput());
 		assertEquals(0, tOut.getState());
 		assertEquals("[Test,0]", tOut.toString());
+		
+		tOut.setOutput("T1");
+		tOut.setState(1);
+		
+		assertEquals("T1", tOut.getOutput());
+		assertEquals(1, tOut.getState());
 	}
 
 }

@@ -22,6 +22,7 @@ public class FeeTableTests {
 		assertEquals(false, nFtable.lookup(1));
 		
 		assertEquals("success", nFtable.payfine(1));
+		assertEquals("Borrowing Items Exist", nFtable.payfine(0));
 		
 		assertEquals(0, nFtable.lookupfee(1));
 		assertEquals(true, nFtable.lookup(1));

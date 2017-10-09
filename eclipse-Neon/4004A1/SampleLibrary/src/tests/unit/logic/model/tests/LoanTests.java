@@ -25,6 +25,20 @@ public class LoanTests {
 		assertEquals(tDate, tLoan.getDate());
 		assertEquals("1", tLoan.getRenewstate());
 		assertEquals("[0,Test,0,"+format1.format(tDate)+",1]", tLoan.toString());
+	
+			
+		Date fDate = new Date();
+		tLoan.setCopynumber("1");
+		tLoan.setDate(fDate);
+		tLoan.setIsbn("T1");
+		tLoan.setRenewstate("2");
+		tLoan.setUserid(5);
+		
+		assertEquals("1", tLoan.getCopynumber());
+		assertEquals(fDate, tLoan.getDate());
+		assertEquals("T1", tLoan.getIsbn());
+		assertEquals("2", tLoan.getRenewstate());
+		assertEquals(5, tLoan.getUserid());
 	}
 
 }

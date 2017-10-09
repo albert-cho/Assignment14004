@@ -65,7 +65,7 @@ public class ItemTable {
 		}
 		return result;
 	}
-	public Object delete(String string, String string2) {
+	public Object delete(String tISBN, String cNum) {
 		//Since the itemid and copynumber in is automatically assigned to the item,upon its creation.
 		//Each item has a unique itemid and copynumber.Even it is deleted,they can not be assigned to other item.
 		//To maintain the correctness of the data,here instead delete index from the List.
@@ -76,7 +76,7 @@ public class ItemTable {
 		for(int i=0;i<itemList.size();i++){
 			String ISBN=(itemList.get(i)).getISBN();
 			String copynumber=(itemList.get(i)).getCopynumber();
-			if(ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+			if(ISBN.equalsIgnoreCase(tISBN) && copynumber.equalsIgnoreCase(cNum)){
 				index=i;
 				flag=flag+1;
 			}else{
@@ -84,27 +84,27 @@ public class ItemTable {
 			}
 		}
 		if(flag!=0){
-			boolean loan=LoanTable.getInstance().checkLoan(string,string2);
+			boolean loan=LoanTable.getInstance().checkLoan(tISBN,cNum);
 			if(loan){
 			itemList.get(index).setCopynumber("N/A");
 			result="success";
-			logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Success", string,"N/A"));
+			logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Success", tISBN,"N/A"));
 			}else{
 				result="Active Loan Exists";
-				logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Fail;Reason:The item is currently on loan.", string,string2));
+				logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Fail;Reason:The item is currently on loan.", tISBN,cNum));
 			}
 		}else{
 			result="The Item Does Not Exist";
-			logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Fail;Reason:The Item Does Not Exist.", string,string2));
+			logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Fail;Reason:The Item Does Not Exist.", tISBN,cNum));
 		}
 		return result;
 	}
-	public void deleteAll(String string) {
+	public void deleteAll(String tISBN) {
 		for(int i=0;i<itemList.size();i++){
-			if(string.equalsIgnoreCase(itemList.get(i).getISBN())){
+			if(tISBN.equalsIgnoreCase(itemList.get(i).getISBN())){
 				itemList.get(i).setISBN("N/A");
 				itemList.get(i).setCopynumber("N/A");
-				logger.info(String.format("Operation:Delete Item Due to Title Deletion;ISBN Info:[%s];State:Success", string));
+				logger.info(String.format("Operation:Delete Item Due to Title Deletion;ISBN Info:[%s];State:Success", tISBN));
 			}
 		}
 		

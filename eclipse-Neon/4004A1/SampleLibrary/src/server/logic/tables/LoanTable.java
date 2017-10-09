@@ -32,7 +32,7 @@ public class LoanTable {
 		boolean user=UserTable.getInstance().lookup(uID);
 		boolean isbn=TitleTable.getInstance().lookup(nISBN);
 		boolean copynumber=ItemTable.getInstance().lookup(nISBN,cNUM);
-		boolean oloan=LoanTable.getInstance().lookup(uID,nISBN,cNUM);
+		boolean oloan=LoanTable.getInstance().lookup(nISBN,cNUM);
 		boolean limit=LoanTable.getInstance().checkLimit(uID);
 		boolean fee=FeeTable.getInstance().lookup(uID);
 		if(user==false){
@@ -66,13 +66,13 @@ public class LoanTable {
     	return result;
 	}
 	
-    public boolean lookup(int j, String string, String string2) {
+    public boolean lookup(String tISBN, String cNum) {
 		boolean result=true;
 		int flag=0;
 		for(int i=0;i<loanList.size();i++){
 			String ISBN=(loanList.get(i)).getIsbn();
 			String copynumber=(loanList.get(i)).getCopynumber();
-			if(ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+			if(ISBN.equalsIgnoreCase(tISBN) && copynumber.equalsIgnoreCase(cNum)){
 				flag=flag+1;
 			}else{
 				flag=flag+0;	
@@ -84,12 +84,12 @@ public class LoanTable {
 		return result;
 	}
     
-    public boolean checkLimit(int j) {
+    public boolean checkLimit(int uID) {
 		boolean result=true;
 		int flag=0;
 		for(int i=0;i<loanList.size();i++){
 			int userid=(loanList.get(i)).getUserid();
-			if(userid==j){
+			if(userid==uID){
 				flag=flag+1;
 			}else{
 				flag=flag+0;	
@@ -101,17 +101,17 @@ public class LoanTable {
 		return result;
 	}
     
-    public Object renewal(int j, String string, String string2, Date date) {
+    public Object renewal(int uID, String tISBN, String cNum, Date date) {
 		String result="";
 		int flag=0;
 		int index=0;
-		boolean limit=LoanTable.getInstance().checkLimit(j);
-		boolean fee=FeeTable.getInstance().lookup(j);
+		boolean limit=LoanTable.getInstance().checkLimit(uID);
+		boolean fee=FeeTable.getInstance().lookup(uID);
 		for(int i=0;i<loanList.size();i++){
 			String ISBN=(loanList.get(i)).getIsbn();
 			String copynumber=(loanList.get(i)).getCopynumber();
 			int userid=(loanList.get(i)).getUserid();
-			if((userid==j) && ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+			if((userid==uID) && ISBN.equalsIgnoreCase(tISBN) && copynumber.equalsIgnoreCase(cNum)){
 				flag=flag+1;
 				index=i;
 			}else{
@@ -121,28 +121,28 @@ public class LoanTable {
 		if(limit && fee){
 			if(flag!=0){
 				if(loanList.get(index).getRenewstate().equalsIgnoreCase("0")){
-					loanList.get(index).setUserid(j);
-					loanList.get(index).setIsbn(string);
-					loanList.get(index).setCopynumber(string2);
+					loanList.get(index).setUserid(uID);
+					loanList.get(index).setIsbn(tISBN);
+					loanList.get(index).setCopynumber(cNum);
 					loanList.get(index).setDate(new Date());
 					loanList.get(index).setRenewstate("1");
 					result="success";
-					logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Success", j,string,string2,dateformat(date)));
+					logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Success", uID,tISBN,cNum,dateformat(date)));
 				}else{
 					result="Renewed Item More Than Once for the Same Loan";
-					logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.", j,string,string2,dateformat(date)));
+					logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.", uID,tISBN,cNum,dateformat(date)));
 					}
 			}else{
 				result="The loan does not exist";
-				logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The loan does not exist.", j,string,string2,dateformat(date)));
+				logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The loan does not exist.", uID,tISBN,cNum,dateformat(date)));
 			}
 			
 		}else if(limit==false){
 			result="The Maximun Number of Items is Reached";
-			logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Maximun Number of Items is Reached.", j,string,string2,dateformat(date)));
+			logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Maximun Number of Items is Reached.", uID,tISBN,cNum,dateformat(date)));
 		}else if(fee==false){
 			result="Outstanding Fee Exists";
-			logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Outstanding Fee Exists.", j,string,string2,dateformat(date)));
+			logger.info(String.format("Operation:Renew Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Outstanding Fee Exists.", uID,tISBN,cNum,dateformat(date)));
 		}
 		return result;
 	}
@@ -152,7 +152,7 @@ public class LoanTable {
 		String datestr=format1.format(date);
 		return datestr;
 	}
-	public Object returnItem(int j, String string, String string2, Date date) {
+	public Object returnItem(int uID, String tISBN, String cNum, Date date) {
 		String result="";
 		int flag=0;
 		int index=0;
@@ -160,7 +160,7 @@ public class LoanTable {
 			String ISBN=(loanList.get(i)).getIsbn();
 			String copynumber=(loanList.get(i)).getCopynumber();
 			int userid=(loanList.get(i)).getUserid();
-			if((userid==j) && ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+			if((userid==uID) && ISBN.equalsIgnoreCase(tISBN) && copynumber.equalsIgnoreCase(cNum)){
 				flag=flag+1;
 				index=i;
 			}else{
@@ -170,14 +170,14 @@ public class LoanTable {
 		if(flag!=0){
 			long time = date.getTime()-loanList.get(index).getDate().getTime();
 			loanList.remove(index);
-			logger.info(String.format("Operation:Return Item;Loan Info:[%d,%s,%s,%s];State:Success", j,string,string2,dateformat(date)));
+			logger.info(String.format("Operation:Return Item;Loan Info:[%d,%s,%s,%s];State:Success", uID,tISBN,cNum,dateformat(date)));
 			if(time>Config.OVERDUE*Config.STIMULATED_DAY){
-				FeeTable.getInstance().applyfee(j,time);
+				FeeTable.getInstance().applyfee(uID,time);
 			}
 			result="success";
 		}else{
 			result="The Loan Does Not Exist";
-			logger.info(String.format("Operation:Return Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Loan Does Not Exist.", j,string,string2,dateformat(date)));
+			logger.info(String.format("Operation:Return Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Loan Does Not Exist.", uID,tISBN,cNum,dateformat(date)));
 		}
 		
 		return result;
@@ -202,12 +202,12 @@ public class LoanTable {
 		}
 		return result;
 	}
-    public boolean checkUser(int j) {
+    public boolean checkUser(int uID) {
 		boolean result=true;
 		int flag=0;
 		for(int i=0;i<loanList.size();i++){
 			int userid=(loanList.get(i)).getUserid();
-			if(userid==j){
+			if(userid==uID){
 				flag=flag+1;
 			}else{
 				flag=flag+0;	
@@ -218,13 +218,13 @@ public class LoanTable {
 		}
 		return result;
 	}
-	public boolean checkLoan(String string, String string2) {
+	public boolean checkLoan(String tISBN, String cNum) {
 		boolean result=true;
 		int flag=0;
 		for(int i=0;i<loanList.size();i++){
 			String ISBN=(loanList.get(i)).getIsbn();
 			String copynumber=(loanList.get(i)).getCopynumber();
-			if(ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+			if(ISBN.equalsIgnoreCase(tISBN) && copynumber.equalsIgnoreCase(cNum)){
 				flag=flag+1;
 			}else{
 				flag=flag+0;	
@@ -235,12 +235,12 @@ public class LoanTable {
 		}
 		return result;
 	}
-	public boolean checkLoan(String string) {
+	public boolean checkLoan(String tISBN) {
 		boolean result=true;
 		int flag=0;
 		for(int i=0;i<loanList.size();i++){
 			String ISBN=(loanList.get(i)).getIsbn();
-			if(ISBN.equalsIgnoreCase(string)){
+			if(ISBN.equalsIgnoreCase(tISBN)){
 				flag=flag+1;
 			}else{
 				flag=flag+0;	

@@ -940,4 +940,10 @@
 @2017-10-09 16:02:35 INFO  String:53 - Operation:Borrow Item;Loan Info:[0,9781442668584,1,2017-10-09 04:02:35];State:Success
 @2017-10-09 16:02:35 INFO  String:106 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Active Loan Exists.
 @2017-10-09 16:02:35 INFO  String:90 - Operation:Delete User;User Info:[N/A,N/A];State:Fail;Reason:The User Does Not Exist.
+@2017-10-09 16:20:56 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-09 04:20:56,0]]
+@2017-10-09 16:20:56 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-09 16:20:56 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-09 16:20:56 INFO  String:104 - Operation:Apply OutStanding Fee;Fee Info:[1,161];State:Success
+@2017-10-09 16:20:56 INFO  String:149 - Operation:Pay Fine;Fee Info:[1,161];State:Success
+@2017-10-09 16:20:56 INFO  String:144 - Operation:Pay Fine;Fee Info:[0,0];State:Fail;Reason:Borrowing Items Exist.
 @

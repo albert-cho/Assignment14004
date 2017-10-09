@@ -30,8 +30,8 @@ public class LoanTableTests {
 		assertEquals("The Maximun Number of Items is Reached", tLtable.createloan(1, "9781442668584", "1", tDate));
 		
 		
-		assertEquals(false, tLtable.lookup(1, "9781611687910", "1"));
-		assertEquals(true, tLtable.lookup(1, "1", "1"));
+		assertEquals(false, tLtable.lookup("9781611687910", "1"));
+		assertEquals(true, tLtable.lookup("1", "1"));
 		
 		assertEquals(true, tLtable.checkLimit(2));
 		assertEquals(false, tLtable.checkLimit(1));
