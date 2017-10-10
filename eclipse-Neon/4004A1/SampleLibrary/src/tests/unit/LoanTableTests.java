@@ -24,7 +24,6 @@ public class LoanTableTests {
 		nFtable.applyfee(0, 99999999);
 		assertEquals("Outstanding Fee Exists", tLtable.createloan(0, "9781442667181", "1", tDate));
 		
-		System.out.println(tItable.lookup("9781611687910", "1"));
 		assertEquals("success", tLtable.createloan(1, "9781611687910", "1", tDate));
 		assertEquals("User Invalid", tLtable.createloan(6, "9781611687910", "1", tDate));
 		assertEquals("ISBN Invalid", tLtable.createloan(1, "1", "1", tDate));
