@@ -182,7 +182,7 @@ public class OutputHandlerTests {
 		assertEquals(CLERKLOGIN, tOut.getState());
 		
 		tOut = tOhandle.clerkLogin(Config.CLERK_PASSWORD);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tOut.getOutput());
 		assertEquals(CLERK, tOut.getState());
 		
 		tOut = tOhandle.userLogin("");

@@ -52,7 +52,7 @@ public class InputHandlerTests {
 		assertEquals(FINISHWAITING, tServerOut.getState());
 		
 		tServerOut = tInput.processInput(Config.CLERK_PASSWORD, CLERKLOGIN);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
 		
 		tServerOut = tInput.processInput("Yu@carleton.ca,Yu", USERLOGIN);
@@ -88,8 +88,12 @@ public class InputHandlerTests {
 		assertEquals(WAITING, tServerOut.getState());
 		
 		tServerOut = tInput.processInput("main menu", CLERK);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
+		
+		tServerOut = tInput.processInput("display", CLERK);
+		assertEquals("Please Input Display Info:'Titles/Users/Monitor'", tServerOut.getOutput());
+		assertEquals(DISPLAY, tServerOut.getState());
 		
 		tServerOut = tInput.processInput("", CLERK);
 		assertEquals("Please select from the menu.Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
@@ -128,7 +132,7 @@ public class InputHandlerTests {
 		assertEquals(WAITING, tServerOut.getState());
 
 		tServerOut = tInput.processInput("main menu", CREATEUSER);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
 
 		tServerOut = tInput.processInput("Sun@carleton.ca,Sun", CREATEUSER);
@@ -140,7 +144,7 @@ public class InputHandlerTests {
 		assertEquals(WAITING, tServerOut.getState());
 
 		tServerOut = tInput.processInput("main menu", CREATETITLE);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
 
 		tServerOut = tInput.processInput("9781442668584,By The Grace of God", CREATETITLE);
@@ -152,7 +156,7 @@ public class InputHandlerTests {
 		assertEquals(WAITING, tServerOut.getState());
 
 		tServerOut = tInput.processInput("main menu", CREATEITEM);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
 
 		tServerOut = tInput.processInput("1111111111111", CREATEITEM);
@@ -164,7 +168,7 @@ public class InputHandlerTests {
 		assertEquals(WAITING, tServerOut.getState());
 
 		tServerOut = tInput.processInput("main menu", DELETEUSER);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
 
 		tServerOut = tInput.processInput("Testing@test.ca", DELETEUSER);
@@ -176,7 +180,7 @@ public class InputHandlerTests {
 		assertEquals(WAITING, tServerOut.getState());
 
 		tServerOut = tInput.processInput("main menu", DELETETITLE);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
 
 		tServerOut = tInput.processInput("1135A", DELETETITLE);
@@ -188,7 +192,7 @@ public class InputHandlerTests {
 		assertEquals(WAITING, tServerOut.getState());
 
 		tServerOut = tInput.processInput("main menu", DELETEITEM);
-		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.", tServerOut.getOutput());
+		assertEquals("What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item,Display Titles/Users/Monitor.", tServerOut.getOutput());
 		assertEquals(CLERK, tServerOut.getState());
 
 		tServerOut = tInput.processInput("1111111111111", DELETEITEM);
