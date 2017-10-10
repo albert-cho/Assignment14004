@@ -256,6 +256,24 @@ public class InputHandler {
 	        		oo.setOutput(output);
 		            oo.setState(state);
 	        	}
+	        }else if(state==DISPLAY){
+	        	if(input.equalsIgnoreCase("log out")){
+	            	output = "Successfully Log Out!";
+	                state = WAITING;
+	                oo.setOutput(output);
+		            oo.setState(state);
+	        	}else if(input.equalsIgnoreCase("main menu")){
+	        		output = "What can I do for you?Menu:Borrow,Renew,Return,Pay Fine.";
+	                state = USER;
+	                oo.setOutput(output);
+		            oo.setState(state);
+	        	}else {
+	        		o = outputHandler.display(input);
+	        		output = o.getOutput();
+	        		state = o.getState();
+	        		oo.setOutput(output);
+	        		oo.setState(state);
+	        	}
 	        }else if(state==BORROW){
 	        	if(input.equalsIgnoreCase("log out")){
 	            	output = "Successfully Log Out!";

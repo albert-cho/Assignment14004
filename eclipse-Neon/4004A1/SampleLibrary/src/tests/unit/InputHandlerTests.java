@@ -6,6 +6,8 @@ import org.junit.Test;
 
 import server.logic.handler.InputHandler;
 import server.logic.handler.model.ServerOutput;
+import server.logic.tables.TitleTable;
+import server.logic.tables.UserTable;
 import utilities.Config;
 
 public class InputHandlerTests {
@@ -240,6 +242,24 @@ public class InputHandlerTests {
 		tServerOut = tInput.processInput("Test", PAYFINE);
 		assertEquals("Your input should in this format:'useremail'", tServerOut.getOutput());
 		assertEquals(PAYFINE, tServerOut.getState());
+		
+		tServerOut = tInput.processInput("titles", DISPLAY);
+		assertEquals(TitleTable.getInstance().getTitleList(), tServerOut.getOutput());
+		assertEquals(CLERK, tServerOut.getState());
+		
+		tServerOut = tInput.processInput("users", DISPLAY);
+		assertEquals(UserTable.getInstance().getUserList(), tServerOut.getOutput());
+		assertEquals(CLERK, tServerOut.getState());
+		
+		tServerOut = tInput.processInput("Test", DISPLAY);
+		assertEquals("Your input should in this format:'display'", tServerOut.getOutput());
+		assertEquals(DISPLAY, tServerOut.getState());
+		
+		String tString = "Titles: " + TitleTable.getInstance().getTitleList() +
+				"\nUsers: " + UserTable.getInstance().getUserList();
+		tServerOut = tInput.processInput("monitor", DISPLAY);
+		assertEquals(tString, tServerOut.getOutput());
+		assertEquals(CLERK, tServerOut.getState());
 	}
 
 }

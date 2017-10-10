@@ -142,7 +142,7 @@ public class UserTable {
 		return result;
 	}
 	
-	public String getTitleList(){
+	public String getUserList(){
 		String uValues = "";
 		for (int i = 0; i < userList.size(); i++){
 			uValues = uValues + userList.get(i);

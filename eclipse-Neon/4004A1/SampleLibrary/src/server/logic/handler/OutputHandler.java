@@ -350,14 +350,24 @@ public class OutputHandler {
 	}
 
 	public Output display(String input) {
+		String[] strArray = null;   
+        strArray = input.split(",");
 		Output output=new Output("",0);
 		String rValues = "";
-		if (input.equalsIgnoreCase("Titles")){
+		if (strArray[0].equalsIgnoreCase("Titles")){
 			rValues = TitleTable.getInstance().getTitleList();
 			output.setState(CLERK);
-		} else if(input.equalsIgnoreCase("Users")){
-			rValues = UserTable.getInstance().getTitleList();
+		} else if(strArray[0].equalsIgnoreCase("Users")){
+			rValues = UserTable.getInstance().getUserList();
 			output.setState(CLERK);
+		} else if(strArray[0].equalsIgnoreCase("Monitor")){
+			rValues = TitleTable.getInstance().getTitleList();
+    		String tString = UserTable.getInstance().getUserList();
+    		rValues = "Titles: "+ rValues + "\nUsers: " + tString;
+    		output.setState(CLERK);
+		}else{
+			rValues = "Your input should in this format:'display'";
+			output.setState(DISPLAY);
 		}
 		output.setOutput(rValues);
 		return output;

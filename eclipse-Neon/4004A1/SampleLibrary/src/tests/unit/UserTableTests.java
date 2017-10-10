@@ -51,7 +51,7 @@ public class UserTableTests {
 			}
 		}
 		
-		assertEquals(uValues, tUtable.getTitleList());
+		assertEquals(uValues, tUtable.getUserList());
 	}
 
 }

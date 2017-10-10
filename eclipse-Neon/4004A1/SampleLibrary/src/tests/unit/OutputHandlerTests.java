@@ -222,6 +222,17 @@ public class OutputHandlerTests {
 		tOut = tOhandle.display("Users");
 		assertEquals(uValues, tOut.getOutput());
 		assertEquals(CLERK, tOut.getState());
+		
+		String mValues = "";
+		mValues = "Titles: " + tValues + "\nUsers: " + uValues;
+		
+		tOut = tOhandle.display("Monitor");
+		assertEquals(mValues, tOut.getOutput());
+		assertEquals(CLERK, tOut.getState());
+		
+		tOut = tOhandle.display("Test");
+		assertEquals("Your input should in this format:'display'", tOut.getOutput());
+		assertEquals(DISPLAY, tOut.getState());
 	}
 
 }
