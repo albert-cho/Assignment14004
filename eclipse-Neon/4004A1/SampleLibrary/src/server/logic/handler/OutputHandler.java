@@ -190,8 +190,9 @@ public class OutputHandler {
             	}else{
             		output.setOutput(result+"!");
             	}
+        		output.setState(USER);
         	}
-        	output.setState(USER);
+        	
         }
 		return output;
 	}
@@ -222,8 +223,8 @@ public class OutputHandler {
             	}else{
             		output.setOutput(result+"!");
             	}
+        		output.setState(USER);
         	}
-        	output.setState(USER);
         }
 		return output;
 	}
@@ -254,8 +255,9 @@ public class OutputHandler {
             	}else{
             		output.setOutput(result+"!");
             	}
+        		output.setState(USER);
         	}
-        	output.setState(USER);
+        	
         }
 		return output;
 
