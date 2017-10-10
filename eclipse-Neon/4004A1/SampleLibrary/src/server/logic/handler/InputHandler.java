@@ -20,6 +20,7 @@ public class InputHandler {
     public static final int PAYFINE=13;
     public static final int CLERKLOGIN=14;
     public static final int USERLOGIN=15;
+    public static final int DISPLAY=16;
     
     OutputHandler outputHandler=new OutputHandler();
 

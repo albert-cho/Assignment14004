@@ -27,6 +27,7 @@ public class OutputHandler {
     public static final int PAYFINE=13;
     public static final int CLERKLOGIN=14;
     public static final int USERLOGIN=15;
+    public static final int DISPLAY=16;
 
 	public Output createUser(String input) {
 		Output output=new Output("",0);
@@ -346,5 +347,18 @@ public class OutputHandler {
 				isNumber = Character.isDigit(ch[i]);
 			}
 		return isNumber;
+	}
+
+	public Output display(String input) {
+		Output output=new Output("",0);
+		String rValues = "";
+		if (input.equalsIgnoreCase("Titles")){
+			rValues = TitleTable.getInstance().getTitleList();
+			output.setState(CLERK);
+		} //else if(input.equalsIgnoreCase("Users")){
+			
+		//}
+		output.setOutput(rValues);
+		return output;
 	}
 }

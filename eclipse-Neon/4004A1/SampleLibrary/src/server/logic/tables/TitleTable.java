@@ -95,4 +95,15 @@ public class TitleTable {
 	public List<Title> getTitleTable() {
 		return titleList;
 	}
+	
+	public String getTitleList(){
+		String tValues = "";
+		for (int i = 0; i < titleList.size(); i++){
+			tValues = tValues + titleList.get(i);
+			if(i < titleList.size()-1){
+				tValues = tValues + ",";
+			}
+		}
+		return tValues;
+	}
 }

@@ -9,7 +9,13 @@ import server.logic.tables.TitleTable;
 public class TitleTableTests {
 	
 	TitleTable tTable = TitleTable.getInstance();
-	
+	String tValues = "";
+	{for (int i = 0; i < TitleTable.getInstance().getTitleTable().size(); i++){
+		tValues = tValues + TitleTable.getInstance().getTitleTable().get(i);
+		if(i < TitleTable.getInstance().getTitleTable().size()-1){
+			tValues = tValues + ",";
+		}
+	}}
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
@@ -24,6 +30,8 @@ public class TitleTableTests {
 		assertEquals("The Title Does Not Exist", tTable.delete("ISBN"));
 		
 		tTable.createtitle("9781442668584", "1");
+		
+		assertEquals(tValues, TitleTable.getInstance().getTitleList());
 	}
 
 }

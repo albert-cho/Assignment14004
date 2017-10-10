@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import server.logic.handler.OutputHandler;
 import server.logic.handler.model.Output;
+import server.logic.tables.TitleTable;
 import utilities.Config;
 
 public class OutputHandlerTests {
@@ -25,9 +26,11 @@ public class OutputHandlerTests {
     public static final int PAYFINE=13;
     public static final int CLERKLOGIN=14;
     public static final int USERLOGIN=15;
+    public static final int DISPLAY=16;
     
 	Output tOut = null;
 	OutputHandler tOhandle = new OutputHandler();
+	String tValues = "";
 	
 	@Test
 	public void test() {
@@ -195,6 +198,17 @@ public class OutputHandlerTests {
 		tOut = tOhandle.userLogin("Test@testing.ca,Test");
 		assertEquals("The User Does Not Exist!Please The Username and Password:'username,password'", tOut.getOutput());
 		assertEquals(USERLOGIN, tOut.getState());
+		
+		for (int i = 0; i < TitleTable.getInstance().getTitleTable().size(); i++){
+			tValues = tValues + TitleTable.getInstance().getTitleTable().get(i);
+			if(i < TitleTable.getInstance().getTitleTable().size()-1){
+				tValues = tValues + ",";
+			}
+		}
+		
+		tOut = tOhandle.display("Titles");
+		assertEquals(tValues, tOut.getOutput());
+		assertEquals(CLERK, tOut.getState());
 	}
 
 }
