@@ -31,8 +31,6 @@ public class addItem {
 		tServerOut = tInput.processInput("9781442668584", InputHandler.CREATEITEM);
 		assertEquals("Success!", tServerOut.getOutput());
 		assertEquals(InputHandler.CLERK, tServerOut.getState());
-		
-		////T
 	}
 
 }
