@@ -4680,4 +4680,71 @@
 @2017-10-10 07:58:12 INFO  String:145 - Operation:Renew Item;Loan Info:[0,9781442668584,1,2017-10-10 07:58:12];State:Fail;Reason:Outstanding Fee Exists.
 @2017-10-10 07:58:12 INFO  String:149 - Operation:Pay Fine;Fee Info:[0,5];State:Success
 @2017-10-10 07:58:12 INFO  String:144 - Operation:Pay Fine;Fee Info:[1,0];State:Fail;Reason:Borrowing Items Exist.
+@2017-10-10 08:04:44 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 08:04:44 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 08:04:44,0]]
+@2017-10-10 08:04:44 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 08:04:44 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 08:04:44 INFO  String:44 - Operation:Create New User;User Info:[Test,Password];State:Success
+@2017-10-10 08:04:44 INFO  String:47 - Operation:Create New User;User Info:[Test,Password];State:Fail;Reason:The User already existed.
+@2017-10-10 08:04:44 INFO  String:100 - Operation:Delete User;User Info:[Test,Password];State:Success
+@2017-10-10 08:04:44 INFO  String:103 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 08:04:44 INFO  String:173 - Operation:Return Item;Loan Info:[0,9781442668584,1,2017-10-10 08:04:44];State:Success
+@2017-10-10 08:04:44 INFO  String:149 - Operation:Pay Fine;Fee Info:[0,5];State:Success
+@2017-10-10 08:04:45 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 08:04:45 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 08:04:45 INFO  String:53 - Operation:Borrow Item;Loan Info:[0,9781442668584,1,2017-10-10 08:04:44];State:Success
+@2017-10-10 08:04:45 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,-4];State:Success
+@2017-10-10 08:04:45 INFO  String:106 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Active Loan Exists.
+@2017-10-10 08:04:45 INFO  String:106 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Active Loan Exists.
+@2017-10-10 08:04:45 INFO  String:90 - Operation:Delete User;User Info:[N/A,N/A];State:Fail;Reason:The User Does Not Exist.
+@2017-10-10 08:04:51 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 08:04:51 INFO  String:44 - Operation:Create New User;User Info:[Test@test.ca,Test];State:Success
+@2017-10-10 08:04:51 INFO  String:47 - Operation:Create New User;User Info:[Sun@carleton.ca,Sun];State:Fail;Reason:The User already existed.
+@2017-10-10 08:04:51 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 08:04:51 INFO  String:42 - Operation:Create New Title;Title Info:[9999999999999,Test];State:Success
+@2017-10-10 08:04:51 INFO  String:45 - Operation:Create New Title;Title Info:[9781442668584,By The Grace of God];State:Fail;Reason:The ISBN already existed.
+@2017-10-10 08:04:51 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 08:04:51 INFO  String:44 - Operation:Create New Item;Item Info:[9781442668584,2];State:Success
+@2017-10-10 08:04:51 INFO  String:47 - Operation:Create New Item;Item Info:[1111111111111,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-10 08:04:51 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 08:04:51,0]]
+@2017-10-10 08:04:51 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 08:04:51 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 08:04:51 INFO  String:100 - Operation:Delete User;User Info:[Sun@carleton.ca,Sun];State:Success
+@2017-10-10 08:04:51 INFO  String:103 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 08:04:51 INFO  String:107 - Operation:Delete Item Due to Title Deletion;ISBN Info:[9781442616899];State:Success
+@2017-10-10 08:04:51 INFO  String:84 - Operation:Delete Title;Title Info:[9781442616899,Dante's lyric poetry ];State:Success
+@2017-10-10 08:04:51 INFO  String:87 - Operation:Delete Title;ISBN Info:[9781442668584];State:Fail;Reason:Active Loan Exists.
+@2017-10-10 08:04:51 INFO  String:173 - Operation:Return Item;Loan Info:[0,9781442668584,1,2017-10-10 08:04:51];State:Success
+@2017-10-10 08:04:51 INFO  String:180 - Operation:Return Item;Loan Info:[0,9999999999999,1,2017-10-10 08:04:51];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-10 08:04:51 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781442668584,1,2017-10-10 08:04:51];State:Success
+@2017-10-10 08:04:51 INFO  String:63 - Operation:Borrow Item;Loan Info:[0,9781442668584,1,2017-10-10 08:04:51];State:Fail;Reason:The Item is Not Available.
+@2017-10-10 08:04:51 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781442668584,1,2017-10-10 08:04:51];State:Success
+@2017-10-10 08:04:51 INFO  String:145 - Operation:Renew Item;Loan Info:[0,9781442668584,1,2017-10-10 08:04:51];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 08:04:51 INFO  String:149 - Operation:Pay Fine;Fee Info:[0,5];State:Success
+@2017-10-10 08:04:51 INFO  String:144 - Operation:Pay Fine;Fee Info:[1,0];State:Fail;Reason:Borrowing Items Exist.
+@2017-10-10 08:08:03 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 08:08:03 INFO  String:44 - Operation:Create New User;User Info:[Test@test.ca,Test];State:Success
+@2017-10-10 08:08:03 INFO  String:47 - Operation:Create New User;User Info:[Sun@carleton.ca,Sun];State:Fail;Reason:The User already existed.
+@2017-10-10 08:08:03 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 08:08:03 INFO  String:42 - Operation:Create New Title;Title Info:[9999999999999,Test];State:Success
+@2017-10-10 08:08:03 INFO  String:45 - Operation:Create New Title;Title Info:[9781442668584,By The Grace of God];State:Fail;Reason:The ISBN already existed.
+@2017-10-10 08:08:03 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 08:08:03 INFO  String:44 - Operation:Create New Item;Item Info:[9781442668584,2];State:Success
+@2017-10-10 08:08:03 INFO  String:47 - Operation:Create New Item;Item Info:[1111111111111,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-10 08:08:03 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 08:08:03,0]]
+@2017-10-10 08:08:03 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 08:08:03 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 08:08:03 INFO  String:100 - Operation:Delete User;User Info:[Sun@carleton.ca,Sun];State:Success
+@2017-10-10 08:08:03 INFO  String:103 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 08:08:03 INFO  String:107 - Operation:Delete Item Due to Title Deletion;ISBN Info:[9781442616899];State:Success
+@2017-10-10 08:08:03 INFO  String:84 - Operation:Delete Title;Title Info:[9781442616899,Dante's lyric poetry ];State:Success
+@2017-10-10 08:08:03 INFO  String:87 - Operation:Delete Title;ISBN Info:[9781442668584];State:Fail;Reason:Active Loan Exists.
+@2017-10-10 08:08:03 INFO  String:173 - Operation:Return Item;Loan Info:[0,9781442668584,1,2017-10-10 08:08:03];State:Success
+@2017-10-10 08:08:03 INFO  String:180 - Operation:Return Item;Loan Info:[0,9999999999999,1,2017-10-10 08:08:03];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-10 08:08:03 INFO  String:53 - Operation:Borrow Item;Loan Info:[1,9781442668584,1,2017-10-10 08:08:03];State:Success
+@2017-10-10 08:08:03 INFO  String:63 - Operation:Borrow Item;Loan Info:[0,9781442668584,1,2017-10-10 08:08:03];State:Fail;Reason:The Item is Not Available.
+@2017-10-10 08:08:03 INFO  String:130 - Operation:Renew Item;Loan Info:[1,9781442668584,1,2017-10-10 08:08:03];State:Success
+@2017-10-10 08:08:03 INFO  String:145 - Operation:Renew Item;Loan Info:[0,9781442668584,1,2017-10-10 08:08:03];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 08:08:03 INFO  String:149 - Operation:Pay Fine;Fee Info:[0,5];State:Success
+@2017-10-10 08:08:03 INFO  String:144 - Operation:Pay Fine;Fee Info:[1,0];State:Fail;Reason:Borrowing Items Exist.
 @

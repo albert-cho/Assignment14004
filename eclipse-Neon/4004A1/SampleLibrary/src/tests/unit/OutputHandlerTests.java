@@ -7,6 +7,7 @@ import org.junit.Test;
 import server.logic.handler.OutputHandler;
 import server.logic.handler.model.Output;
 import server.logic.tables.TitleTable;
+import server.logic.tables.UserTable;
 import utilities.Config;
 
 public class OutputHandlerTests {
@@ -31,6 +32,7 @@ public class OutputHandlerTests {
 	Output tOut = null;
 	OutputHandler tOhandle = new OutputHandler();
 	String tValues = "";
+	String uValues = "";
 	
 	@Test
 	public void test() {
@@ -208,6 +210,17 @@ public class OutputHandlerTests {
 		
 		tOut = tOhandle.display("Titles");
 		assertEquals(tValues, tOut.getOutput());
+		assertEquals(CLERK, tOut.getState());
+		
+		for (int i = 0; i < UserTable.getInstance().getUserTable().size(); i++){
+			uValues = uValues + UserTable.getInstance().getUserTable().get(i);
+			if(i < UserTable.getInstance().getUserTable().size()-1){
+				uValues = uValues + ",";
+			}
+		}
+		
+		tOut = tOhandle.display("Users");
+		assertEquals(uValues, tOut.getOutput());
 		assertEquals(CLERK, tOut.getState());
 	}
 

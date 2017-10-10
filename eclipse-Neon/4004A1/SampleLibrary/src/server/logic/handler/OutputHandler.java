@@ -355,9 +355,10 @@ public class OutputHandler {
 		if (input.equalsIgnoreCase("Titles")){
 			rValues = TitleTable.getInstance().getTitleList();
 			output.setState(CLERK);
-		} //else if(input.equalsIgnoreCase("Users")){
-			
-		//}
+		} else if(input.equalsIgnoreCase("Users")){
+			rValues = UserTable.getInstance().getTitleList();
+			output.setState(CLERK);
+		}
 		output.setOutput(rValues);
 		return output;
 	}

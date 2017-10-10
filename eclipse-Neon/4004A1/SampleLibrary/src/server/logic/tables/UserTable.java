@@ -141,4 +141,15 @@ public class UserTable {
 		}
 		return result;
 	}
+	
+	public String getTitleList(){
+		String uValues = "";
+		for (int i = 0; i < userList.size(); i++){
+			uValues = uValues + userList.get(i);
+			if(i < userList.size()-1){
+				uValues = uValues + ",";
+			}
+		}
+		return uValues;
+	}
 }

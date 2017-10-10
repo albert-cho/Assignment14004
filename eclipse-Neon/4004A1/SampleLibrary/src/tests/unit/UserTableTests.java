@@ -42,6 +42,16 @@ public class UserTableTests {
 		System.out.println(rr);
 		assertEquals("Active Loan Exists", tUtable.delete(0));
 		assertEquals("The User Does Not Exist", tUtable.delete(6));
+		
+		String uValues = "";
+		for (int i = 0; i < tUtable.getUserTable().size(); i++){
+			uValues = uValues + tUtable.getUserTable().get(i);
+			if(i < tUtable.getUserTable().size()-1){
+				uValues = uValues + ",";
+			}
+		}
+		
+		assertEquals(uValues, tUtable.getTitleList());
 	}
 
 }
