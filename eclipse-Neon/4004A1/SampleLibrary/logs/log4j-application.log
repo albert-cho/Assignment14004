@@ -5291,4 +5291,179 @@
 @2017-10-10 21:03:31 INFO  String:33 - Operation:User has active loan.
 @2017-10-10 21:03:31 INFO  String:100 - Operation:Delete User;User Info:[Yu@carleton.ca,Yu];State:Success
 @2017-10-10 21:03:31 INFO  String:39 - Operation:User gets deleted successfully.
+@2017-10-10 21:10:05 INFO  String:26 - Operation:Clerk requesting to monitor the library.
+@2017-10-10 21:10:05 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 21:10:05 INFO  String:34 - Operation:The Titles and Users get displayed to the clerk.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Clerk requesting to delete a User.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 09:10:05,0]]
+@2017-10-10 21:10:05 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 21:10:05 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 21:10:05 INFO  String:103 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 21:10:05 INFO  String:32 - Operation:User has outstanding fees.
+@2017-10-10 21:10:05 INFO  String:100 - Operation:Delete User;User Info:[Yu@carleton.ca,Yu];State:Success
+@2017-10-10 21:10:05 INFO  String:38 - Operation:User gets deleted successfully.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Clerk requesting to delete an Item.
+@2017-10-10 21:10:05 INFO  String:32 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 21:10:05 INFO  String:91 - Operation:Delete Item;Item Info:[9781442616899,N/A];State:Success
+@2017-10-10 21:10:05 INFO  String:38 - Operation:Item gets deleted from the system.
+@2017-10-10 21:10:05 INFO  String:94 - Operation:Delete Item;Item Info:[9781442668584,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-10 21:10:05 INFO  String:45 - Operation:Item does not get deleted because there is an active loan.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Clerk requesting to create a User.
+@2017-10-10 21:10:05 INFO  String:47 - Operation:Create New User;User Info:[Sun@carleton.ca,Sun];State:Fail;Reason:The User already existed.
+@2017-10-10 21:10:05 INFO  String:32 - Operation:User already exists.
+@2017-10-10 21:10:05 INFO  String:44 - Operation:Create New User;User Info:[Test@carleton.ca,Test];State:Success
+@2017-10-10 21:10:05 INFO  String:38 - Operation:User gets created successfully.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Clerk requesting to create an Item.
+@2017-10-10 21:10:05 INFO  String:47 - Operation:Create New Item;Item Info:[1111111111111,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-10 21:10:05 INFO  String:34 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:10:05 INFO  String:35 - Operation:Clerk gets asked if want to add the Title. See addTitle Test.
+@2017-10-10 21:10:05 INFO  String:44 - Operation:Create New Item;Item Info:[9781442668584,2];State:Success
+@2017-10-10 21:10:05 INFO  String:41 - Operation:Item gets created into the system.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Clerk requesting to delete a Title.
+@2017-10-10 21:10:05 INFO  String:32 - Operation:Item can not be deleted due to missing information.
+@2017-10-10 21:10:05 INFO  String:98 - Operation:Delete Item;Item Info:[9781442616899,1];State:Fail;Reason:The Item Does Not Exist.
+@2017-10-10 21:10:05 INFO  String:25 - Operation:Clerk requesting to create a Title.
+@2017-10-10 21:10:05 INFO  String:32 - Operation:Title can not be made due to missing information.
+@2017-10-10 21:10:05 INFO  String:42 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Success
+@2017-10-10 21:10:05 INFO  String:38 - Operation:Title gets generated.
+@2017-10-10 21:10:05 INFO  String:45 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Fail;Reason:The ISBN already existed.
+@2017-10-10 21:10:05 INFO  String:44 - Operation:Title that is wanting to be created already exists.
+@2017-10-10 21:10:25 INFO  String:26 - Operation:Clerk requesting to monitor the library.
+@2017-10-10 21:10:25 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 21:10:25 INFO  String:34 - Operation:The Titles and Users get displayed to the clerk.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Clerk requesting to delete a User.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 09:10:25,0]]
+@2017-10-10 21:10:25 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 21:10:25 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 21:10:25 INFO  String:103 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 21:10:25 INFO  String:32 - Operation:User has outstanding fees.
+@2017-10-10 21:10:25 INFO  String:100 - Operation:Delete User;User Info:[Yu@carleton.ca,Yu];State:Success
+@2017-10-10 21:10:25 INFO  String:38 - Operation:User gets deleted successfully.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Clerk requesting to delete an Item.
+@2017-10-10 21:10:25 INFO  String:32 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 21:10:25 INFO  String:91 - Operation:Delete Item;Item Info:[9781442616899,N/A];State:Success
+@2017-10-10 21:10:25 INFO  String:38 - Operation:Item gets deleted from the system.
+@2017-10-10 21:10:25 INFO  String:94 - Operation:Delete Item;Item Info:[9781442668584,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-10 21:10:25 INFO  String:45 - Operation:Item does not get deleted because there is an active loan.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Clerk requesting to create a User.
+@2017-10-10 21:10:25 INFO  String:47 - Operation:Create New User;User Info:[Sun@carleton.ca,Sun];State:Fail;Reason:The User already existed.
+@2017-10-10 21:10:25 INFO  String:32 - Operation:User already exists.
+@2017-10-10 21:10:25 INFO  String:44 - Operation:Create New User;User Info:[Test@carleton.ca,Test];State:Success
+@2017-10-10 21:10:25 INFO  String:38 - Operation:User gets created successfully.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Clerk requesting to create an Item.
+@2017-10-10 21:10:25 INFO  String:47 - Operation:Create New Item;Item Info:[1111111111111,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-10 21:10:25 INFO  String:34 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:10:25 INFO  String:35 - Operation:Clerk gets asked if want to add the Title. See addTitle Test.
+@2017-10-10 21:10:25 INFO  String:44 - Operation:Create New Item;Item Info:[9781442668584,2];State:Success
+@2017-10-10 21:10:25 INFO  String:41 - Operation:Item gets created into the system.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Clerk requesting to delete a Title.
+@2017-10-10 21:10:25 INFO  String:32 - Operation:Item can not be deleted due to missing information.
+@2017-10-10 21:10:25 INFO  String:98 - Operation:Delete Item;Item Info:[9781442616899,1];State:Fail;Reason:The Item Does Not Exist.
+@2017-10-10 21:10:25 INFO  String:25 - Operation:Clerk requesting to create a Title.
+@2017-10-10 21:10:25 INFO  String:32 - Operation:Title can not be made due to missing information.
+@2017-10-10 21:10:25 INFO  String:42 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Success
+@2017-10-10 21:10:25 INFO  String:38 - Operation:Title gets generated.
+@2017-10-10 21:10:25 INFO  String:45 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Fail;Reason:The ISBN already existed.
+@2017-10-10 21:10:25 INFO  String:44 - Operation:Title that is wanting to be created already exists.
+@2017-10-10 21:11:14 INFO  String:26 - Operation:Clerk requesting to monitor the library.
+@2017-10-10 21:11:14 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 21:11:14 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 21:11:14 INFO  String:34 - Operation:The Titles and Users get displayed to the clerk.
+@2017-10-10 21:11:14 INFO  String:25 - Operation:Clerk requesting to delete a User.
+@2017-10-10 21:11:14 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 09:11:14,0]]
+@2017-10-10 21:11:14 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 21:11:14 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 21:11:14 INFO  String:103 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 21:11:14 INFO  String:32 - Operation:User has outstanding fees.
+@2017-10-10 21:11:15 INFO  String:100 - Operation:Delete User;User Info:[Yu@carleton.ca,Yu];State:Success
+@2017-10-10 21:11:15 INFO  String:38 - Operation:User gets deleted successfully.
+@2017-10-10 21:11:15 INFO  String:25 - Operation:Clerk requesting to delete an Item.
+@2017-10-10 21:11:15 INFO  String:32 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:11:15 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 21:11:15 INFO  String:91 - Operation:Delete Item;Item Info:[9781442616899,N/A];State:Success
+@2017-10-10 21:11:15 INFO  String:38 - Operation:Item gets deleted from the system.
+@2017-10-10 21:11:15 INFO  String:94 - Operation:Delete Item;Item Info:[9781442668584,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-10 21:11:15 INFO  String:45 - Operation:Item does not get deleted because there is an active loan.
+@2017-10-10 21:11:15 INFO  String:25 - Operation:Clerk requesting to create a User.
+@2017-10-10 21:11:15 INFO  String:47 - Operation:Create New User;User Info:[Sun@carleton.ca,Sun];State:Fail;Reason:The User already existed.
+@2017-10-10 21:11:15 INFO  String:32 - Operation:User already exists.
+@2017-10-10 21:11:15 INFO  String:44 - Operation:Create New User;User Info:[Test@carleton.ca,Test];State:Success
+@2017-10-10 21:11:15 INFO  String:38 - Operation:User gets created successfully.
+@2017-10-10 21:11:15 INFO  String:25 - Operation:Clerk requesting to create an Item.
+@2017-10-10 21:11:15 INFO  String:47 - Operation:Create New Item;Item Info:[1111111111111,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-10 21:11:15 INFO  String:34 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:11:15 INFO  String:35 - Operation:Clerk gets asked if want to add the Title. See addTitle Test.
+@2017-10-10 21:11:15 INFO  String:44 - Operation:Create New Item;Item Info:[9781442668584,2];State:Success
+@2017-10-10 21:11:15 INFO  String:41 - Operation:Item gets created into the system.
+@2017-10-10 21:11:15 INFO  String:25 - Operation:Clerk requesting to delete a Title.
+@2017-10-10 21:11:15 INFO  String:32 - Operation:Item can not be deleted due to missing information.
+@2017-10-10 21:11:15 INFO  String:98 - Operation:Delete Item;Item Info:[9781442616899,1];State:Fail;Reason:The Item Does Not Exist.
+@2017-10-10 21:11:15 INFO  String:25 - Operation:Clerk requesting to create a Title.
+@2017-10-10 21:11:15 INFO  String:32 - Operation:Title can not be made due to missing information.
+@2017-10-10 21:11:15 INFO  String:42 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Success
+@2017-10-10 21:11:15 INFO  String:38 - Operation:Title gets generated.
+@2017-10-10 21:11:15 INFO  String:45 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Fail;Reason:The ISBN already existed.
+@2017-10-10 21:11:15 INFO  String:44 - Operation:Title that is wanting to be created already exists.
+@2017-10-10 21:11:44 INFO  String:25 - Operation:Clerk requesting to delete a Title.
+@2017-10-10 21:11:44 INFO  String:32 - Operation:Item can not be deleted due to missing information.
+@2017-10-10 21:11:44 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 21:11:44 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 09:11:44,0]]
+@2017-10-10 21:11:44 INFO  String:91 - Operation:Delete Item;Item Info:[9781442616899,N/A];State:Success
+@2017-10-10 21:11:44 INFO  String:38 - Operation:Item gets deleted.
+@2017-10-10 21:11:44 INFO  String:94 - Operation:Delete Item;Item Info:[9781442668584,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-10 21:11:44 INFO  String:44 - Operation:Item that is wanting to be deleted has an active loan.
+@2017-10-10 21:19:37 INFO  String:25 - Operation:Clerk requesting to create an Item.
+@2017-10-10 21:19:37 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 21:19:37 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 21:19:37 INFO  String:47 - Operation:Create New Item;Item Info:[1111111111111,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-10 21:19:37 INFO  String:34 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:19:37 INFO  String:35 - Operation:Clerk gets asked if want to add the Title. See addTitle Test.
+@2017-10-10 21:19:37 INFO  String:44 - Operation:Create New Item;Item Info:[9781442668584,2];State:Success
+@2017-10-10 21:19:37 INFO  String:41 - Operation:Item gets created into the system.
+@2017-10-10 21:21:57 INFO  String:25 - Operation:Clerk requesting to create a Title.
+@2017-10-10 21:21:57 INFO  String:32 - Operation:Title can not be made due to missing information.
+@2017-10-10 21:21:57 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 21:21:57 INFO  String:42 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Success
+@2017-10-10 21:21:57 INFO  String:38 - Operation:Title gets generated.
+@2017-10-10 21:21:57 INFO  String:45 - Operation:Create New Title;Title Info:[1111111111111, Test];State:Fail;Reason:The ISBN already existed.
+@2017-10-10 21:21:57 INFO  String:44 - Operation:Title that is wanting to be created already exists.
+@2017-10-10 21:23:24 INFO  String:25 - Operation:Clerk requesting to create a User.
+@2017-10-10 21:23:24 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 21:23:24 INFO  String:47 - Operation:Create New User;User Info:[Sun@carleton.ca,Sun];State:Fail;Reason:The User already existed.
+@2017-10-10 21:23:24 INFO  String:32 - Operation:User already exists.
+@2017-10-10 21:23:24 INFO  String:44 - Operation:Create New User;User Info:[Test@carleton.ca,Test];State:Success
+@2017-10-10 21:23:24 INFO  String:38 - Operation:User gets created successfully.
+@2017-10-10 21:24:20 INFO  String:26 - Operation:Clerk requesting to monitor the library.
+@2017-10-10 21:24:20 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 21:24:20 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 21:24:20 INFO  String:34 - Operation:The Titles and Users get displayed to the clerk.
+@2017-10-10 21:25:36 INFO  String:25 - Operation:Clerk requesting to delete an Item.
+@2017-10-10 21:25:36 INFO  String:32 - Operation:Item's ISBN number does not exist.
+@2017-10-10 21:25:36 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 21:25:36 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 09:25:36,0]]
+@2017-10-10 21:25:36 INFO  String:91 - Operation:Delete Item;Item Info:[9781442616899,N/A];State:Success
+@2017-10-10 21:25:36 INFO  String:38 - Operation:Item gets deleted from the system.
+@2017-10-10 21:25:36 INFO  String:94 - Operation:Delete Item;Item Info:[9781442668584,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-10 21:25:36 INFO  String:45 - Operation:Item does not get deleted because there is an active loan.
+@2017-10-10 21:26:45 INFO  String:25 - Operation:Clerk requesting to delete a Title.
+@2017-10-10 21:26:45 INFO  String:32 - Operation:Item can not be deleted due to missing information.
+@2017-10-10 21:26:45 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 21:26:45 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 09:26:45,0]]
+@2017-10-10 21:26:45 INFO  String:91 - Operation:Delete Item;Item Info:[9781442616899,N/A];State:Success
+@2017-10-10 21:26:45 INFO  String:38 - Operation:Item gets deleted.
+@2017-10-10 21:26:45 INFO  String:94 - Operation:Delete Item;Item Info:[9781442668584,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-10 21:26:45 INFO  String:44 - Operation:Item that is wanting to be deleted has an active loan.
+@2017-10-10 21:27:51 INFO  String:25 - Operation:Clerk requesting to delete a User.
+@2017-10-10 21:27:51 INFO  String:25 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 21:27:51 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 09:27:51,0]]
+@2017-10-10 21:27:51 INFO  String:98 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 21:27:51 INFO  String:122 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 21:27:51 INFO  String:103 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 21:27:51 INFO  String:32 - Operation:User has outstanding fees.
+@2017-10-10 21:27:51 INFO  String:100 - Operation:Delete User;User Info:[Yu@carleton.ca,Yu];State:Success
+@2017-10-10 21:27:51 INFO  String:38 - Operation:User gets deleted successfully.
 @

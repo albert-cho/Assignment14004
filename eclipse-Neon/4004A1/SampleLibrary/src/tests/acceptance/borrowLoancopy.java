@@ -10,10 +10,7 @@ public class borrowLoancopy {
 
 	@Test
 	public void test() {
-		//Clerk to add user
-		tServerOut = tInput.processInput("create user", InputHandler.CLERK);
-		assertEquals("Please Input User Info:'username,password'", tServerOut.getOutput());
-		assertEquals(InputHandler.CREATEUSER, tServerOut.getState());
+		fail("Not yet implemented");
 	}
 
 }
